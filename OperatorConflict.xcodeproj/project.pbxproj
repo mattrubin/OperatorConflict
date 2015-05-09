@@ -12,7 +12,25 @@
 		C99D30D31AFEC9E100710CFF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C99D30D11AFEC9E100710CFF /* Main.storyboard */; };
 		C99D30D51AFEC9E100710CFF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C99D30D41AFEC9E100710CFF /* Images.xcassets */; };
 		C99D30D81AFEC9E100710CFF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C99D30D61AFEC9E100710CFF /* LaunchScreen.xib */; };
+		C99D30F01AFECD1B00710CFF /* Result.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C99D30EF1AFECD1B00710CFF /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C99D30F11AFECD2A00710CFF /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C99D30EF1AFECD1B00710CFF /* Result.framework */; };
+		C99D30F31AFECD3B00710CFF /* Box.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C99D30F21AFECD3B00710CFF /* Box.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C99D30F41AFECD3F00710CFF /* Box.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C99D30F21AFECD3B00710CFF /* Box.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C99D30EE1AFECD0D00710CFF /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C99D30F01AFECD1B00710CFF /* Result.framework in CopyFiles */,
+				C99D30F31AFECD3B00710CFF /* Box.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		C99D30C81AFEC9E100710CFF /* OperatorConflict.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OperatorConflict.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,6 +42,8 @@
 		C99D30D71AFEC9E100710CFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		C99D30E21AFEC9E100710CFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C99D30E31AFEC9E100710CFF /* OperatorConflictTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperatorConflictTests.swift; sourceTree = "<group>"; };
+		C99D30EF1AFECD1B00710CFF /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
+		C99D30F21AFECD3B00710CFF /* Box.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Box.framework; path = Carthage/Build/iOS/Box.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +51,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C99D30F11AFECD2A00710CFF /* Result.framework in Frameworks */,
+				C99D30F41AFECD3F00710CFF /* Box.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +64,7 @@
 			children = (
 				C99D30CA1AFEC9E100710CFF /* OperatorConflict */,
 				C99D30E01AFEC9E100710CFF /* OperatorConflictTests */,
+				C99D30F51AFECD5B00710CFF /* Frameworks */,
 				C99D30C91AFEC9E100710CFF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -92,6 +115,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		C99D30F51AFECD5B00710CFF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C99D30EF1AFECD1B00710CFF /* Result.framework */,
+				C99D30F21AFECD3B00710CFF /* Box.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -102,6 +134,7 @@
 				C99D30C41AFEC9E100710CFF /* Sources */,
 				C99D30C51AFEC9E100710CFF /* Frameworks */,
 				C99D30C61AFEC9E100710CFF /* Resources */,
+				C99D30EE1AFECD0D00710CFF /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -222,6 +255,10 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -271,6 +308,10 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -308,6 +349,7 @@
 				C99D30E71AFEC9E100710CFF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
