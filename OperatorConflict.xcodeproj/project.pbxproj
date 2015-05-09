@@ -16,6 +16,8 @@
 		C99D30F11AFECD2A00710CFF /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C99D30EF1AFECD1B00710CFF /* Result.framework */; };
 		C99D30F31AFECD3B00710CFF /* Box.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C99D30F21AFECD3B00710CFF /* Box.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C99D30F41AFECD3F00710CFF /* Box.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C99D30F21AFECD3B00710CFF /* Box.framework */; };
+		C99D30F71AFED0CD00710CFF /* Runes.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C99D30F61AFED0CD00710CFF /* Runes.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C99D30F81AFED0DC00710CFF /* Runes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C99D30F61AFED0CD00710CFF /* Runes.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,6 +29,7 @@
 			files = (
 				C99D30F01AFECD1B00710CFF /* Result.framework in CopyFiles */,
 				C99D30F31AFECD3B00710CFF /* Box.framework in CopyFiles */,
+				C99D30F71AFED0CD00710CFF /* Runes.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +47,7 @@
 		C99D30E31AFEC9E100710CFF /* OperatorConflictTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperatorConflictTests.swift; sourceTree = "<group>"; };
 		C99D30EF1AFECD1B00710CFF /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
 		C99D30F21AFECD3B00710CFF /* Box.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Box.framework; path = Carthage/Build/iOS/Box.framework; sourceTree = "<group>"; };
+		C99D30F61AFED0CD00710CFF /* Runes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Runes.framework; path = Carthage/Build/iOS/Runes.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,7 @@
 			files = (
 				C99D30F11AFECD2A00710CFF /* Result.framework in Frameworks */,
 				C99D30F41AFECD3F00710CFF /* Box.framework in Frameworks */,
+				C99D30F81AFED0DC00710CFF /* Runes.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,6 +125,7 @@
 			children = (
 				C99D30EF1AFECD1B00710CFF /* Result.framework */,
 				C99D30F21AFECD3B00710CFF /* Box.framework */,
+				C99D30F61AFED0CD00710CFF /* Runes.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
