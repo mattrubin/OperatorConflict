@@ -13,17 +13,14 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        useResult()
+    }
 
+    private func useResult() {
         let resultString: Result<String, Void> = .success("hello!")
         let enthusiasticResult = resultString >>- intensifyEnthusiasm
         print(enthusiasticResult)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 
 }
 
